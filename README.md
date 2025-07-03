@@ -1,11 +1,11 @@
-# Orphanage Management System - Backend Django
+# Orphanage Management System 
 
 Système de gestion complet pour orphelinat avec API REST sécurisée.
 
 ## 🏗️ Architecture
 
 ### Structure du projet
-\`\`\`
+
 orphanage_backend/
 ├── apps/
 │   ├── accounts/          # Gestion des utilisateurs et authentification
