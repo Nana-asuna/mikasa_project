@@ -1,0 +1,79 @@
+## 🧩 Présentation du projet
+
+**Orphelinat Management System** est une application web complète qui vise à moderniser et centraliser la gestion quotidienne d’un orphelinat. Elle permet le suivi administratif, médical et social des enfants, la gestion des dons, du personnel, des stocks ainsi que des interactions avec les familles d’accueil, les donateurs et les parrains.
+
+Elle offre une interface intuitive et sécurisée, accessible aux différents acteurs du système avec des permissions adaptées à chaque rôle.
+
+---
+
+## 🎯 Objectif principal
+
+L’objectif du projet est de fournir une **plateforme numérique unique, fiable et sécurisée** permettant à un orphelinat de :
+
+- Suivre chaque enfant depuis son admission jusqu’à son éventuel placement ou adoption.
+- Gérer les rôles du personnel impliqué dans le suivi médical, social et logistique.
+- Enregistrer et visualiser les dons, parrainages et interactions extérieures.
+- Organiser des événements et visites médicales via un système de planning intégré.
+- Accéder à des **rapports statistiques et PDF** pour une meilleure visibilité sur les activités.
+
+Ce système vise à **améliorer la transparence, la coordination et la traçabilité** au sein de la structure.
+
+---
+
+## 🏗️ Architecture technique
+
+Le projet est découpé en deux grandes parties interconnectées :
+
+### 🔸 Frontend
+
+- **Technologies** : Next.js (React), TypeScript, Tailwind CSS
+- **Rôle** : Interface utilisateur réactive et sécurisée
+- **Fonctionnalités principales** :
+  - Authentification via JWT
+  - Navigation par rôle (admin, soignant, donateur, etc.)
+  - Dashboards dynamiques
+  - Formulaires interactifs
+  - Affichage des données (enfants, dons, stock…)
+
+### 🔸 Backend
+
+- **Technologies** : Django, Django REST Framework, SQLite (ou PostgreSQL)
+- **Rôle** : Serveur d'API RESTful, gestion des données et sécurité
+- **Fonctionnalités principales** :
+  - Authentification sécurisée avec JWT (access + refresh)
+  - Gestion des utilisateurs, rôles et permissions
+  - CRUD complet pour toutes les entités : enfants, dons, familles, stocks…
+  - Génération de rapports PDF
+  - Historique des actions sensibles
+
+### 🔸 API REST
+
+- Entièrement construite avec **Django REST Framework**
+- Pagination, filtrage, recherche
+- Validation avancée et gestion des erreurs
+- Documentée avec Swagger ou Redoc
+
+### 🔸 Sécurité intégrée
+
+- Vérification d'email à l’inscription
+- Limitation des tentatives de connexion (ratelimit)
+- Permissions d’accès par rôle
+- Protection CORS, journalisation, audit
+
+---
+
+Le projet est **dockerisé** et prêt à être déployé sur des plateformes comme **Heroku**, **Render** ou **Railway**, avec des scripts d’initialisation, de seed et une configuration par fichiers `.env`.
+
+---
+
+## 📩 Contact
+
+Pour plus d’informations, questions ou suggestions, veuillez contacter :
+
+**Nana Yague DIAME**  
+📧 Email : [nanayaguediame@gmail.com](mailto:nanayaguediame@gmail.com)  
+📞 Téléphone : +221 76 556 89 76
+
+---
+
+Merci de votre intérêt pour ce projet !
