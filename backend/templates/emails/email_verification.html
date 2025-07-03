@@ -1,0 +1,33 @@
+{% extends "emails/base.html" %}
+
+{% block title %}Vérification de votre adresse email{% endblock %}
+
+{% block header %}Vérification d'email{% endblock %}
+
+{% block content %}
+<h2>Bonjour {{ user.first_name }},</h2>
+
+<p>Merci de vous être inscrit sur notre système de gestion d'orphelinat. Pour des raisons de sécurité, nous devons vérifier votre adresse email.</p>
+
+<p>Veuillez cliquer sur le bouton ci-dessous pour vérifier votre compte :</p>
+
+<a href="{{ verification_url }}" class="button">Vérifier mon email</a>
+
+<p>Si le bouton ne fonctionne pas, copiez et collez ce lien dans votre navigateur :</p>
+<p style="word-break: break-all; background-color: #f1f1f1; padding: 10px; border-radius: 3px;">
+    {{ verification_url }}
+</p>
+
+<div style="background-color: #e8f4fd; padding: 15px; border-radius: 5px; margin: 20px 0;">
+    <strong>🔒 Informations de sécurité :</strong>
+    <ul>
+        <li>Ce lien est valide pendant 24 heures</li>
+        <li>Il ne peut être utilisé qu'une seule fois</li>
+        <li>Si vous n'avez pas créé ce compte, ignorez cet email</li>
+    </ul>
+</div>
+
+<p>Si vous avez des questions, contactez notre équipe de support.</p>
+
+<p>Cordialement,<br>L'équipe Orphanage Management System</p>
+{% endblock %}
