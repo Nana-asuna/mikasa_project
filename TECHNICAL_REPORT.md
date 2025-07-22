@@ -62,12 +62,6 @@ Le projet est une application de gestion d'orphelinat composée de deux parties 
 - Gestion des erreurs et logs (backend et frontend)
 - Structure de projet modulaire et évolutive
 
-## 8. Recommandations
-- Ne jamais commiter node_modules ou les fichiers volumineux
-- Utiliser des secrets d'environnement pour la prod
-- Ajouter des tests unitaires et d'intégration
-- Mettre en place une CI/CD (GitHub Actions)
-- Documenter les endpoints API (Swagger, Redoc)
 
 ---
 
